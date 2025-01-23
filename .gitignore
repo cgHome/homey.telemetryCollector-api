@@ -2,8 +2,3 @@
 /node_modules/
 /.homeybuild/
 /.DS_Store
-
-/$collectorApi.mjs
-/$index$$$.js
-/$logCollector.js
-/$logCollector.mjs
