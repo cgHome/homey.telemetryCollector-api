@@ -8,11 +8,3 @@
 ## npm
 
 - https://developer-blog.net/eigenes-npm-paket-erstellen/
-
-on package:
-- npm link 
-- npm ll
-
-on App:
-- npm link homey-telemetrycollector-api 
-- npm unlink homey-telemetrycollector-api
