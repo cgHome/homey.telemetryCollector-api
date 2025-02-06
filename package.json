@@ -1,8 +1,11 @@
 {
   "name": "homey-telemetrycollector-api",
   "version": "1.0.0",
-  "description": "TelemetryCollectorApp Api for developers",
+  "description": "TelemetryCollectorApp API for Homey developers",
   "main": "./index.js",
+  "engines": {
+    "node": ">=12"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
