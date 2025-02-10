@@ -22,16 +22,10 @@ npm install homey-telemetrycollector-api
  "permissions": ["homey:app:org.cflat-inc.telemetryCollector"]
 ```
 
-### Import package
+### Install TelemetryCollector api
 
 ```js
-const { TelemetryCollectorApi } = require('homey-telemetrycollector-api');
-```
-
-### Define TelemetryCollector api
-
-```js
-module.exports = class MyApp extends TelemetryCollectorApi(Homey.App)
+require('homey-telemetrycollector-api').install;
 ```
 
 ### Use it
@@ -85,7 +79,8 @@ this.logDebug('logDebug-Message');
 
 const Homey = require('homey');
 
-const { TelemetryCollectorApi } = require('homey-telemetrycollector-api');
+// Install the TelemetryCollector Api
+require('homey-telemetrycollector-api').install;
 
 // Development
 const inspector = require('node:inspector');
@@ -98,57 +93,13 @@ if (process.env.DEBUG === '1') {
   }
 }
 
-module.exports = class TelemetryCollectorApp extends TelemetryCollectorApi(Homey.App) {
+module.exports = class TelemetryCollectorApp extends Homey.App {
 
   async onInit() {
 
     // ...
 
     this.logInfo('App has been initialized');
-  }
-
-};
-```
-
-### Homey.Driver
-
-```js
-'use strict';
-
-const Homey = require('homey');
-
-const { TelemetryCollectorApi } = require('homey-telemetrycollector-api');
-
-module.exports = class BaseDriver extends TelemetryCollectorApi(Homey.Driver) {
-
-  async onInit() {
-    super.onInit();
-
-    // ...
-
-    this.logInfo('Driver has been initialized');
-  }
-
-};
-```
-
-### Homey.Device
-
-```js
-'use strict';
-
-const Homey = require('homey');
-
-const { TelemetryCollectorApi } = require('homey-telemetrycollector-api');
-
-module.exports = class BaseDevice extends TelemetryCollectorApi(Homey.Device) {
-
-  async onInit() {
-    super.onInit();
-
-    // ...
-
-    this.logInfo('Device has been initialized');
   }
 
 };
