@@ -2,9 +2,11 @@
 
 Minimal lightweight logging for Homey Apps
 
-This module will be used in a Homey app to send logs to the [TelemetryCollectorApp](https://homey.app/de-ch/app/org.cflat-inc.telemetryCollector).
+This module will be used in a Homey app to send logs to the [TelemetryCollectorApp](https://homey.app/de-ch/app/org.cflat-inc.telemetrycollector).
 
-This module is implemented as a mixin pattern to simplify the use of the interface. (For more information about mixins, see: > Useful Links > Mixins)
+This module is implemented as a mixin pattern to simplify the use of the interface.
+
+(For more information about mixins, see: > Useful Links > Mixins)
 
 ---
 
@@ -93,7 +95,7 @@ if (process.env.DEBUG === '1') {
   }
 }
 
-module.exports = class TelemetryCollectorApp extends Homey.App {
+module.exports = class MyApp extends Homey.App {
 
   async onInit() {
 
