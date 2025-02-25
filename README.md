@@ -2,7 +2,7 @@
 
 Minimal lightweight logging for Homey Apps
 
-This module will be used in a Homey app to send logs to the [TelemetryCollectorApp](https://homey.app/de-ch/app/org.cflat-inc.telemetrycollector).
+This module will be used in a Homey app to send logs to the [TelemetryCollector App](https://homey.app/de-ch/app/org.cflat-inc.telemetrycollector).
 
 This module is implemented as a mixin pattern to simplify the use of the interface.
 
@@ -139,7 +139,7 @@ Rename the methods, it's fast (global search & replace), the code is more readab
 
 ## Thanks
 
-....
+Special thanks to all for the help in testing the new version.
 
 ---
 
